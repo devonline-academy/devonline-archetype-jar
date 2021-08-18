@@ -89,6 +89,9 @@
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources-plugin.version}</version>
+                    <configuration>
+                        <addDefaultExcludes>false</addDefaultExcludes>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
