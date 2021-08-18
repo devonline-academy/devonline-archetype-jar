@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!--
   ~ Copyright (c) 2019. http://devonline.academy
   ~
@@ -25,8 +24,14 @@
         <fileSet filtered="true" packaged="true">
             <directory>src/main/java</directory>
         </fileSet>
-        <fileSet filtered="true" packaged="true">
+        <fileSet>
+            <directory>src/main/resources</directory>
+        </fileSet>
+        <fileSet>
             <directory>src/test/java</directory>
+        </fileSet>
+        <fileSet>
+            <directory>src/test/resources</directory>
         </fileSet>
     </fileSets>
 </archetype-descriptor>
