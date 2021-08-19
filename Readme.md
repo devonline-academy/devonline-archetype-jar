@@ -4,35 +4,80 @@
 
 ### For Windows:
 
+Using default settings:
+
 ```bash
 mvn archetype:generate ^
     -DarchetypeCatalog=local ^
     -DarchetypeGroupId=academy.devonline.maven.archetypes ^
     -DarchetypeArtifactId=devonline-archetype-jar ^
-    -DarchetypeVersion=1.0-SNAPSHOT ^
     -DinteractiveMode=false ^
-    -DgroupId=academy.devonline.java ^
-    -DartifactId=new-project ^
-    -Dversion=0.0.1-SNAPSHOT ^
-    -Dpackage=academy.devonline.java.root
+    -DartifactId=simple
+```
+
+Using custom settings:
+
+```bash
+mvn archetype:generate ^
+    -DarchetypeCatalog=local ^
+    -DarchetypeGroupId=academy.devonline.maven.archetypes ^
+    -DarchetypeArtifactId=devonline-archetype-jar ^
+    -DinteractiveMode=false ^
+    -DgroupId=org.example ^
+    -DartifactId=simple ^
+    -Dversion=2.0-SNAPSHOT ^
+    -Dpackage=org.example.simple.root
+```
+
+Using interactive mode:
+
+```bash
+mvn archetype:generate ^
+    -DarchetypeCatalog=local ^
+    -DarchetypeGroupId=academy.devonline.maven.archetypes ^
+    -DarchetypeArtifactId=devonline-archetype-jar ^
+    -DinteractiveMode=true
 ```
 
 ### For MacOS or Linux:
+
+Using default settings:
 
 ```bash
 mvn archetype:generate \
     -DarchetypeCatalog=local \
     -DarchetypeGroupId=academy.devonline.maven.archetypes \
     -DarchetypeArtifactId=devonline-archetype-jar \
-    -DarchetypeVersion=1.0-SNAPSHOT \
     -DinteractiveMode=false \
-    -DgroupId=academy.devonline.java \
-    -DartifactId=new-project \
-    -Dversion=0.0.1-SNAPSHOT \
-    -Dpackage=academy.devonline.java.root
+    -DartifactId=simple
+```
+
+Using custom settings:
+
+```bash
+mvn archetype:generate \
+    -DarchetypeCatalog=local \
+    -DarchetypeGroupId=academy.devonline.maven.archetypes \
+    -DarchetypeArtifactId=devonline-archetype-jar \
+    -DinteractiveMode=false \
+    -DgroupId=org.example \
+    -DartifactId=simple \
+    -Dversion=2.0-SNAPSHOT \
+    -Dpackage=org.example.simple.root
+```
+
+Using interactive mode:
+
+```bash
+mvn archetype:generate \
+    -DarchetypeCatalog=local \
+    -DarchetypeGroupId=academy.devonline.maven.archetypes \
+    -DarchetypeArtifactId=devonline-archetype-jar \
+    -DinteractiveMode=true
 ```
 
 -----------------------------------------------------------------------------------
+
 
 ## Readme tutorial
 
