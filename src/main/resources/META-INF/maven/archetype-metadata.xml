@@ -20,6 +20,15 @@
                                           http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd"
                       name="${artifactId}">
 
+    <requiredProperties>
+        <requiredProperty key="groupId">
+            <defaultValue>academy.devonline</defaultValue>
+        </requiredProperty>
+        <requiredProperty key="package">
+            <defaultValue>${groupId}.${artifactId}</defaultValue>
+        </requiredProperty>
+    </requiredProperties>
+
     <fileSets>
         <fileSet filtered="true" packaged="true">
             <directory>src/main/java</directory>
