@@ -78,6 +78,38 @@ mvn archetype:generate \
 
 -----------------------------------------------------------------------------------
 
+## Build instructions:
+
+#### 1. Install the `3.2.1-SNAPSHOT` version of the `maven-archetype-plugin`:
+
+**For Windows:**
+
+```bash
+git clone https://github.com/devonline-academy/maven-archetype ^
+    && cd maven-archetype ^
+    && mvn install ^
+    && cd ../ ^
+    && rmdir /S /Q maven-archetype
+```
+
+**For MacOS or Linux:**
+
+```bash
+git clone https://github.com/devonline-academy/maven-archetype \
+    && cd maven-archetype \
+    && mvn install \
+    && cd ../ \
+    && rm -f -R maven-archetype
+```
+
+#### 2. Build the latest version of the `devonline-archetype-jar` archetype and install to the local maven repository:
+
+```bash
+mvn clean install
+```
+
+-----------------------------------------------------------------------------------
+
 
 ## Readme tutorial
 
