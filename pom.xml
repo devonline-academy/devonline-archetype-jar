@@ -89,16 +89,26 @@
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>${maven-resources-plugin.version}</version>
-                    <configuration>
-                        <addDefaultExcludes>false</addDefaultExcludes>
-                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>default-resources</id>
+                            <configuration>
+                                <addDefaultExcludes>false</addDefaultExcludes>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-archetype-plugin</artifactId>
                     <version>${maven-archetype-plugin.version}</version>
-                    <configuration>
-                        <useDefaultExcludes>false</useDefaultExcludes>
-                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>default-jar</id>
+                            <configuration>
+                                <useDefaultExcludes>false</useDefaultExcludes>
+                            </configuration>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-install-plugin</artifactId>
