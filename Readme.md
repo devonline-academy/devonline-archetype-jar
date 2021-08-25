@@ -85,23 +85,17 @@ mvn archetype:generate \
 **For Windows:**
 
 ```bash
-git clone https://github.com/apache/maven-archetype ^
-    && cd maven-archetype ^
-    && git checkout 54b5fb4bf16d70fce0ab3493d2e178b317a2f5b7 ^
-    && mvn install ^
-    && cd ../ ^
-    && rmdir /S /Q maven-archetype
+mvn install:install-file ^
+  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar ^
+  -DpomFile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.pom
 ```
 
 **For MacOS or Linux:**
 
 ```bash
-git clone https://github.com/apache/maven-archetype \
-    && cd maven-archetype \
-    && git checkout 54b5fb4bf16d70fce0ab3493d2e178b317a2f5b7 \
-    && mvn install \
-    && cd ../ \
-    && rm -f -R maven-archetype
+mvn install:install-file \
+  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar \
+  -DpomFile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.pom
 ```
 
 #### 2. Build the latest version of the `devonline-archetype-jar` archetype and install to the local maven repository:
