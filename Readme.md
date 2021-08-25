@@ -85,8 +85,9 @@ mvn archetype:generate \
 **For Windows:**
 
 ```bash
-git clone https://github.com/devonline-academy/maven-archetype ^
+git clone https://github.com/apache/maven-archetype ^
     && cd maven-archetype ^
+    && git checkout 54b5fb4bf16d70fce0ab3493d2e178b317a2f5b7 ^
     && mvn install ^
     && cd ../ ^
     && rmdir /S /Q maven-archetype
@@ -95,8 +96,9 @@ git clone https://github.com/devonline-academy/maven-archetype ^
 **For MacOS or Linux:**
 
 ```bash
-git clone https://github.com/devonline-academy/maven-archetype \
+git clone https://github.com/apache/maven-archetype \
     && cd maven-archetype \
+    && git checkout 54b5fb4bf16d70fce0ab3493d2e178b317a2f5b7 \
     && mvn install \
     && cd ../ \
     && rm -f -R maven-archetype
