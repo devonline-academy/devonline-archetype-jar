@@ -85,15 +85,23 @@ mvn archetype:generate \
 **For Windows:**
 
 ```bash
-mvn install:install-file ^
-  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar
+jar xvf .plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar ^
+        META-INF/maven/org.apache.maven.plugins/maven-archetype-plugin/pom.xml ^
+    && mvn install:install-file ^
+        -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar ^
+        -DpomFile=META-INF/maven/org.apache.maven.plugins/maven-archetype-plugin/pom.xml ^
+    && rmdir /S /Q META-INF
 ```
 
 **For MacOS or Linux:**
 
 ```bash
-mvn install:install-file \
-  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar
+jar xvf .plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar \
+        META-INF/maven/org.apache.maven.plugins/maven-archetype-plugin/pom.xml \
+    && mvn install:install-file \
+        -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar \
+        -DpomFile=META-INF/maven/org.apache.maven.plugins/maven-archetype-plugin/pom.xml \
+    && rm -f -R META-INF
 ```
 
 #### 2. Build the latest version of the `devonline-archetype-jar` archetype and install to the local maven repository:
