@@ -86,16 +86,14 @@ mvn archetype:generate \
 
 ```bash
 mvn install:install-file ^
-  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar ^
-  -DpomFile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.pom
+  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar
 ```
 
 **For MacOS or Linux:**
 
 ```bash
 mvn install:install-file \
-  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar \
-  -DpomFile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.pom
+  -Dfile=.plugins/maven-archetype-plugin-3.2.1-SNAPSHOT.jar
 ```
 
 #### 2. Build the latest version of the `devonline-archetype-jar` archetype and install to the local maven repository:
